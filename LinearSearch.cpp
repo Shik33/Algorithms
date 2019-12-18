@@ -8,8 +8,9 @@ int Linearposition(int arr[],int n, int k)
 	i=0;
 	while (i <= n)
 	{
-		if (k == arr[i])
-			return(i);
+		if (arr[i] == k)
+			{return(i);
+			break ;}
 		i++;
 	}
 	return(-1);
@@ -24,8 +25,9 @@ int main() {
 	n = sizeof(arr)/sizeof(arr[0]);
 	p = Linearposition(arr, n, k);
 	if (p == -1)
-	cout<<"Number does not exist"<<endl;
+	cout<<"Number does not exist";
 	else
-	cout<<p<<endl;
+	cout<<p;
+	// your code goes here
 	return 0;
 }
